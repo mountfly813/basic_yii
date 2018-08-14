@@ -18,7 +18,7 @@ use yii\redis\Connection;
  *
  * @author Roman Zhuravlev <zhuravljov@gmail.com>
  */
-class cdQueue extends CliQueue
+class Queue extends CliQueue
 {
     /**
      * @var Connection|array|string
