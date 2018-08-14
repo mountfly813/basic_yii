@@ -6364,17 +6364,17 @@
     },
     {
         "name": "yiisoft/yii2-queue",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
+        "version": "2.1.0",
+        "version_normalized": "2.1.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-queue.git",
-            "reference": "3162bfb0581fa5a08748fe4734c6ff80d0919db4"
+            "reference": "d04b4b3c932081200876a351cc6c3502e89e11b8"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-queue/zipball/3162bfb0581fa5a08748fe4734c6ff80d0919db4",
-            "reference": "3162bfb0581fa5a08748fe4734c6ff80d0919db4",
+            "url": "https://api.github.com/repos/yiisoft/yii2-queue/zipball/d04b4b3c932081200876a351cc6c3502e89e11b8",
+            "reference": "d04b4b3c932081200876a351cc6c3502e89e11b8",
             "shasum": ""
         },
         "require": {
@@ -6402,11 +6402,11 @@
             "php-amqplib/php-amqplib": "Need for AMQP queue.",
             "yiisoft/yii2-redis": "Need for Redis queue."
         },
-        "time": "2018-07-12T11:26:08+00:00",
+        "time": "2018-05-23T21:04:57+00:00",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
-                "dev-master": "2.x-dev"
+                "dev-master": "2.0.x-dev"
             }
         },
         "installation-source": "source",

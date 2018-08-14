@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "61c553e5b5dc203dc67c12f4e97bf588",
+    "content-hash": "ef950e246ffd69942295f82c505ec42c",
     "packages": [
         {
             "name": "2amigos/qrcode-library",
@@ -552,11 +552,11 @@
             ],
             "authors": [
                 {
-                    "name": "???dabing",
+                    "name": "疯狂的dabing",
                     "email": "xbzbing@gmail.com"
                 }
             ],
-            "description": "Yii2???UEditor??",
+            "description": "Yii2的百度UEditor扩展",
             "keywords": [
                 "ueditor",
                 "yii2"
@@ -596,7 +596,7 @@
                     "email": "crazyfd@qq.com"
                 }
             ],
-            "description": "yii2????????",
+            "description": "yii2上传到七牛云存储",
             "keywords": [
                 "qiniu",
                 "upload",
@@ -729,7 +729,7 @@
                     "email": "phphome@qq.com"
                 }
             ],
-            "description": "yii2??????migration????????",
+            "description": "yii2命令行中使用migration备份和还原数据库",
             "keywords": [
                 "console",
                 "migration",
@@ -1244,11 +1244,11 @@
             ],
             "authors": [
                 {
-                    "name": "??",
+                    "name": "简言",
                     "email": "751393839@qq.com"
                 }
             ],
-            "description": "RageFrame???",
+            "description": "RageFrame核心包",
             "homepage": "https://github.com/jianyan74/rageframe-basics",
             "keywords": [
                 "cmf",
@@ -1295,7 +1295,7 @@
                     "name": "jianyan74"
                 }
             ],
-            "description": "WeChat SDK for yii2, ?? overtrue/easywechat",
+            "description": "WeChat SDK for yii2, 基于 overtrue/easywechat",
             "keywords": [
                 "easywechat",
                 "jianyan74",
@@ -1336,7 +1336,7 @@
             ],
             "authors": [
                 {
-                    "name": "??",
+                    "name": "简言",
                     "email": "751393839@qq.com"
                 }
             ],
@@ -1873,7 +1873,7 @@
                 "purchase",
                 "union",
                 "unionpay",
-                "??"
+                "银联"
             ],
             "time": "2017-10-20T09:58:53+00:00"
         },
@@ -1925,7 +1925,7 @@
                 "purchase",
                 "sdk",
                 "wechat",
-                "????"
+                "微信支付"
             ],
             "time": "2018-01-25T02:37:49+00:00"
         },
@@ -2303,7 +2303,7 @@
                     "email": "anzhengchao@gmail.com"
                 }
             ],
-            "description": "??SDK",
+            "description": "微信SDK",
             "keywords": [
                 "sdk",
                 "wechat",
@@ -3761,16 +3761,16 @@
         },
         {
             "name": "yiisoft/yii2-queue",
-            "version": "dev-master",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-queue.git",
-                "reference": "3162bfb0581fa5a08748fe4734c6ff80d0919db4"
+                "reference": "d04b4b3c932081200876a351cc6c3502e89e11b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-queue/zipball/3162bfb0581fa5a08748fe4734c6ff80d0919db4",
-                "reference": "3162bfb0581fa5a08748fe4734c6ff80d0919db4",
+                "url": "https://api.github.com/repos/yiisoft/yii2-queue/zipball/d04b4b3c932081200876a351cc6c3502e89e11b8",
+                "reference": "d04b4b3c932081200876a351cc6c3502e89e11b8",
                 "shasum": ""
             },
             "require": {
@@ -3801,7 +3801,7 @@
             "type": "yii2-extension",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.x-dev"
+                    "dev-master": "2.0.x-dev"
                 }
             },
             "autoload": {
@@ -3841,7 +3841,7 @@
                 "sqs",
                 "yii"
             ],
-            "time": "2018-07-12T11:26:08+00:00"
+            "time": "2018-05-23T21:04:57+00:00"
         },
         {
             "name": "yiisoft/yii2-redis",
@@ -4327,7 +4327,7 @@
             ],
             "authors": [
                 {
-                    "name": "Fran?ois Zaninotto"
+                    "name": "François Zaninotto"
                 }
             ],
             "description": "Faker is a PHP library that generates fake data for you.",
@@ -5851,7 +5851,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jean-Fran?ois Simon",
+                    "name": "Jean-François Simon",
                     "email": "jeanfrancois.simon@sensiolabs.com"
                 },
                 {
@@ -6328,7 +6328,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "yiisoft/yii2-queue": 20,
         "kartik-v/yii2-widget-datepicker": 20,
         "kartik-v/yii2-widget-select2": 20,
         "phpoffice/phpexcel": 20,
