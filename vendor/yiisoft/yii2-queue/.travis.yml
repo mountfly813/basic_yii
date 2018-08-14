@@ -1,0 +1,48 @@
+language: php
+
+php:
+  - 5.6
+  - 7.0
+  - 7.1
+  - 7.2
+
+matrix:
+  include:
+    - php: 5.5
+      env: EXCLUDE_AMQP_INTEROP=true
+  fast_finish: true
+
+
+services:
+  - mysql
+  - postgresql
+  - redis-server
+  - rabbitmq
+
+# cache vendor dirs
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq beanstalkd
+  - sudo beanstalkd -v
+  - sudo service beanstalkd start
+  - pecl install igbinary
+
+install:
+  - travis_retry composer self-update && composer --version
+  - export PATH="$HOME/.composer/vendor/bin:$PATH"
+  - if [ "$EXCLUDE_AMQP_INTEROP" = true ]; then travis_retry composer remove "enqueue/amqp-lib" "enqueue/amqp-tools" --dev --no-interaction  --no-update; fi
+  - travis_retry composer install --prefer-dist --no-interaction
+
+before_script:
+  - mysql -e 'CREATE DATABASE yii2_queue_test;'
+  - php tests/yii mysql-migrate --interactive=0
+  - php tests/yii sqlite-migrate --interactive=0
+  - psql -c  'create database yii2_queue_test;' -U postgres
+  - php tests/yii pgsql-migrate --interactive=0
+
+script:
+  - vendor/bin/phpunit --verbose
